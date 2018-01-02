@@ -16,9 +16,9 @@
       <configuration>
         <option name="HTTP_ADDRESS" value="localhost" />
         <option name="HTTP_PORT" value="8080" />
-        <option name="WAR_DIR" value="G:\android\JokeTeller\backend\build\exploded-app" />
-        <option name="WEB_APP_DIR" value="G:\android\JokeTeller\backend\src\main\webapp" />
-        <option name="APPENGINE_SDKROOT" value="C:\Users\engmo\.gradle\appengine-sdk\appengine-java-sdk-1.9.42" />
+        <option name="WAR_DIR" value="G:\android\JokeTellerApp\backend\build\exploded-app" />
+        <option name="WEB_APP_DIR" value="G:\android\JokeTellerApp\backend\src\main\webapp" />
+        <option name="APPENGINE_SDKROOT" value="C:\Users\engmo\.gradle\appengine-sdk\appengine-java-sdk-1.9.60" />
       </configuration>
     </facet>
   </component>
@@ -30,9 +30,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/functionalTest/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/functionalTest/resources" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/functionalTest/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
@@ -43,7 +43,7 @@
     <orderEntry type="library" exported="" scope="PROVIDED" name="servlet-api-2.5" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-api-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-http-client-android-1.23.0" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-api-1.0-sdk-1.9.42" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-api-1.0-sdk-1.9.60" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="guava-jdk5-17.0" level="project" />
