@@ -23,8 +23,8 @@ targetCompatibility = JavaVersion.VERSION_1_7
 
 dependencies {
     appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.60'
-    compile 'com.google.appengine:appengine-endpoints:1.9.42'
-    compile 'com.google.appengine:appengine-endpoints-deps:1.9.42'
+    compile 'com.google.appengine:appengine-endpoints:1.9.60'
+    compile 'com.google.appengine:appengine-endpoints-deps:1.9.60'
     compile 'javax.servlet:servlet-api:2.5'
     compile 'com.google.api-client:google-api-client:1.23.0'
     compile 'com.google.http-client:google-http-client-android:1.23.0'
@@ -33,6 +33,7 @@ dependencies {
 
 appengine {
     downloadSdk = true
+    httpPort = 8085
     appcfg {
         oauth2 = true
     }

@@ -4,12 +4,17 @@ android {
     compileSdkVersion 22
     buildToolsVersion '26.0.2'
 
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
         javaCompileOptions {
             annotationProcessorOptions {
                 includeCompileClasspath false
@@ -23,13 +28,26 @@ android {
         }
     }
 }
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:23.1.0'
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.1'
     // Added for AdMob
     compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile project(path: ':JavaJokeLib')
     compile project(path: ':jokedisplaylib')
     compile project(path: ':backend', configuration: 'android-endpoints')
+    testCompile 'org.testng:testng:6.9.6'
+    testImplementation 'com.android.support.test:runner:1.0.1'
+
+    // Required for local unit tests (JUnit 4 framework)
+    testCompile 'junit:junit:4.12'
+
+    // Required for instrumented tests
+    testCompile 'com.android.support.test:runner:0.5'
 }
