@@ -14,7 +14,7 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
                 includeCompileClasspath false
@@ -27,7 +27,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions 'default'
+
+    productFlavors{
+        free{
+            applicationId "com.udacity.gradle.builditbigger.free"
+        }
+        paid{
+            applicationId "com.udacity.gradle.builditbigger.paid"
+        }
+
+    }
 }
+
 configurations.all {
     resolutionStrategy.force 'com.android.support:support-annotations:23.1.0'
 }
