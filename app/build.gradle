@@ -30,14 +30,26 @@ android {
 
     flavorDimensions 'default'
 
-    productFlavors{
-        free{
+    productFlavors {
+        free {
             applicationId "com.udacity.gradle.builditbigger.free"
         }
         paid{
             applicationId "com.udacity.gradle.builditbigger.paid"
         }
 
+    }
+    sourceSets {
+        paid {
+            java.srcDirs = ['src/paid/java']
+            res.srcDirs = ['src/paid/res']
+            manifest.srcFile 'src/paid/AndroidManifest.xml'
+        }
+        free {
+            java.srcDirs = ['src/free/java']
+            res.srcDirs = ['src/free/res']
+            manifest.srcFile 'src/free/AndroidManifest.xml'
+        }
     }
 }
 
