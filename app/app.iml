@@ -204,5 +204,20 @@
     <orderEntry type="module" module-name="backend" />
     <orderEntry type="module" module-name="JavaJokeLib" />
     <orderEntry type="module" module-name="jokedisplaylib" />
+    <orderEntry type="module" module-name="backend" />
+    <orderEntry type="module" module-name="JavaJokeLib" />
+    <orderEntry type="module" module-name="jokedisplaylib" />
+    <orderEntry type="module" module-name="backend" />
+    <orderEntry type="module" module-name="JavaJokeLib" />
+    <orderEntry type="module" module-name="jokedisplaylib" />
+    <orderEntry type="module" module-name="backend" />
+    <orderEntry type="module" module-name="JavaJokeLib" />
+    <orderEntry type="module" module-name="jokedisplaylib" />
+    <orderEntry type="module" module-name="backend" />
+    <orderEntry type="module" module-name="JavaJokeLib" />
+    <orderEntry type="module" module-name="jokedisplaylib" />
+    <orderEntry type="module" module-name="backend" />
+    <orderEntry type="module" module-name="JavaJokeLib" />
+    <orderEntry type="module" module-name="jokedisplaylib" />
   </component>
 </module>
