@@ -6,9 +6,13 @@ import android.support.test.runner.AndroidJUnit4;
 import android.text.TextUtils;
 import android.util.Pair;
 
+import com.example.momenali.javajokelib.Jokes;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import static org.testng.Assert.assertEquals;
 
 /**
  * Created by Momen Ali on 1/4/2018.
@@ -37,5 +41,14 @@ public class JokeAsynTaskTest {
 
         Thread.sleep(2000);
         assert TextUtils.isEmpty(backendResult);
+        boolean found = false;
+       for (int i = 0; i < Jokes.getNumberOfJokes();i++){
+           if (Jokes.getJokeNumber(i).equals(backendResult)){
+               found = true;
+               break;
+           }
+
+        }
+        assertEquals(found , true);
     }
 }

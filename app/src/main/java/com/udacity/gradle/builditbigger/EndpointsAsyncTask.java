@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.momenali.jokedisplaylib.JokeDisplayerActivity;
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -58,6 +57,7 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
 
     @Override
     protected void onPostExecute(String result) {
+        MainActivity.progressBarGone();
          Intent intent = new Intent(context , JokeDisplayerActivity.class);
 
         Bundle extra = new Bundle();

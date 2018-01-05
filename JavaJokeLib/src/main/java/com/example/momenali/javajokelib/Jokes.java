@@ -15,30 +15,30 @@ public class Jokes {
 
             "Q. Why do the French like to eat snails so much?\n" +
                     "-\n" +
-                    "A. They can’t stand fast food.",
+                    "A. They can't stand fast food.",
 
             "Husband:  Oh the weather is lovely today. Shall we go out for a quick jog? \n" +
                     "-\n" +
-                    "Wife:  Hahaha, I love the way you pronounce ‘Shall we go out and have a cake’!",
+                    "Wife:  Hahaha, I love the way you pronounce ‘Shall we go out and have a cake'!",
 
 
             "A guest calls the waiter and complains,  How come there are no chairs at our table?!\n" +
                     "-\n" +
-                    "The waiter shrugs,  I’m sorry but you only booked one table…",
+                    "The waiter shrugs,  I'm sorry but you only booked one table…",
 
 
             "Optimist: The glass is half full.\n" +
                     "\n" +
                     "Pessimist: The glass is half empty.\n" +
                     "\n" +
-                    "Mother: Why didn’t you use a coaster!",
+                    "Mother: Why didn't you use a coaster!",
 
 
-            "I asked my daughter if she’d seen my newspaper. She told me that newspapers are old school. " +
-                    "She said that people use tablets nowadays and handed me her iPad. The fly didn’t stand a chance.",
+            "I asked my daughter if she'd seen my newspaper. She told me that newspapers are old school. " +
+                    "She said that people use tablets nowadays and handed me her iPad. The fly didn't stand a chance.",
 
 
-            "I’ve been really depressed lately. A friend told me I should go to the petting zoo perhaps, to cheer up. \n" +
+            "I've been really depressed lately. A friend told me I should go to the petting zoo perhaps, to cheer up. \n" +
                     "-\n" +
                     "I went today, but not one person would stroke me.",
 
@@ -46,7 +46,7 @@ public class Jokes {
             "I forgot my cell phone when I went to the toilet yesterday. We have 245 tiles.",
 
 
-            "She: I have a doctor’s appointment today but I really don’t want to go… \n" +
+            "She: I have a doctor's appointment today but I really don't want to go… \n" +
                     "-\n" +
                     "He: Just call in sick then.",
 
@@ -70,6 +70,9 @@ public class Jokes {
         return Jokes[r.nextInt(length)];
     }
 
+    public static int getNumberOfJokes(){
+        return Jokes.length;
+    }
     public static String getJokeNumber(int num){
         if (num<Jokes.length)
             return Jokes[num];

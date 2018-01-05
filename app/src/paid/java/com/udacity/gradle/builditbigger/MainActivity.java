@@ -1,9 +1,7 @@
 package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.widget.ContentLoadingProgressBar;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Pair;
 import android.view.Menu;
@@ -12,30 +10,26 @@ import android.view.View;
 import android.widget.ProgressBar;
 
 
-import com.example.momenali.javajokelib.Jokes;
-import com.example.momenali.jokedisplaylib.JokeDisplayerActivity;
-
 
 public class MainActivity extends ActionBarActivity {
-    ProgressBar loadingProgressBar;
+    private static ProgressBar loadingProgressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    protected void onResume() {
-        if (loadingProgressBar != null)
-        loadingProgressBar.setVisibility(View.INVISIBLE);
-        super.onResume();
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+    public static void progressBarGone(){
+        if (loadingProgressBar != null){
+            loadingProgressBar.setVisibility(View.GONE);
+        }
     }
 
     @Override

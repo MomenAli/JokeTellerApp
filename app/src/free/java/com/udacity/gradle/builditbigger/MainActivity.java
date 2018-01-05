@@ -8,13 +8,14 @@ import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
 
 public class MainActivity extends ActionBarActivity {
-    ProgressBar loadingProgressBar;
+    static ProgressBar loadingProgressBar;
     private InterstitialAd mInterstitialAd;
 
     @Override
@@ -29,12 +30,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    @Override
-    protected void onResume() {
-        if (loadingProgressBar != null)
-        loadingProgressBar.setVisibility(View.INVISIBLE);
-        super.onResume();
-    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -57,9 +53,14 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public static void progressBarGone(){
+        if (loadingProgressBar != null){
+            loadingProgressBar.setVisibility(View.GONE);
+        }
+    }
     public void tellJoke(View view){
 
-        loadingProgressBar = (ProgressBar) findViewById(R.id.loadingPar);
+        loadingProgressBar = (ProgressBar) findViewById(R.id.progressBar);
         loadingProgressBar.setVisibility(View.VISIBLE);
         if (mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();

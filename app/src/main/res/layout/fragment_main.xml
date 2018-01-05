@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" >
+    android:paddingBottom="@dimen/activity_vertical_margin">
 
     <TextView android:text="@string/instructions"
         android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
 
         android:layout_below="@+id/btnTellJoke"
         android:layout_centerHorizontal="true"
-        android:id="@+id/loadingPar"/>
+        android:id="@+id/progressBar"/>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
